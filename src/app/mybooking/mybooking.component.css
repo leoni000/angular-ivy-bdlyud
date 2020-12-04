@@ -1,0 +1,74 @@
+.group {
+  overflow: hidden;
+  background-color: rgb(250, 31, 31);
+
+  border-radius: 10px;
+}
+
+.group p {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 16px;
+
+  font-family: Verdana;
+  text-decoration: none;
+  font-size: 20px;
+}
+.two {
+  position: absolute;
+  top: 15%;
+  width: 20%;
+  bottom: 0;
+  background-color: white;
+  box-shadow: 5px 10px 8px #888888;
+}
+button {
+  display: block;
+}
+.b1 {
+  width: 80%;
+  margin-left: 8%;
+  background-color: rgb(250, 31, 31);
+  font-family: sans-serif;
+  cursor: pointer;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 0em;
+  padding: 0.5em;
+  border: transparent;
+}
+
+.three {
+  position: absolute;
+  top: 14%;
+  left: 22%;
+
+  bottom: 0%;
+  width: 75%;
+  overflow: scroll;
+  background-color: white;
+}
+.four {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+
+  bottom: 5%;
+  width: 90%;
+  background-color: white;
+  box-shadow: 5px 10px 8px #888888;
+}
+table,
+td,
+th {
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+th {
+  width: 50em;
+  padding: 15px;
+}

@@ -1,0 +1,133 @@
+.group {
+  overflow: hidden;
+  background-color: rgb(250, 31, 31);
+
+  border-radius: 10px;
+}
+
+.group p {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 16px;
+
+  font-family: Verdana;
+  text-decoration: none;
+  font-size: 20px;
+}
+.center p {
+  text-align: center;
+}
+.lt {
+  top: 28%;
+  margin-left: 10%;
+  position: absolute;
+  display: block;
+}
+.rt {
+  top: 28%;
+  left: 60%;
+  position: absolute;
+  display: block;
+}
+label {
+  width: 100px;
+  display: inline-block;
+}
+.pay {
+  background-color: rgb(250, 31, 31);
+  width: 70;
+  display: block;
+  margin: auto;
+  outline: none;
+  font-family: sans-serif;
+  cursor: pointer;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 0em;
+  padding: 0.5em;
+  border: transparent;
+}
+.one {
+  top: 5%;
+  left: 40%;
+  font-weight: bold;
+  position: absolute;
+  text-align: center;
+  font-family: sans-serif;
+}
+.sub-but1 {
+  width: 70;
+  top: 15%;
+  right: 1%;
+  position: absolute;
+  padding: 5px 30px;
+  display: block;
+  margin: auto;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+.two {
+  position: absolute;
+  top: 15%;
+  width: 20%;
+  bottom: 0;
+  background-color: white;
+  box-shadow: 5px 10px 8px #888888;
+}
+button {
+  display: block;
+}
+.three {
+  position: absolute;
+  top: 14%;
+  left: 22%;
+
+  bottom: 0%;
+  width: 75%;
+  overflow: scroll;
+  background-color: white;
+}
+.four {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+
+  bottom: 5%;
+  width: 90%;
+  background-color: white;
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.b1 {
+  width: 80%;
+  margin-left: 8%;
+  background-color: rgb(250, 31, 31);
+  font-family: sans-serif;
+  cursor: pointer;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 0em;
+  padding: 0.5em;
+  border: transparent;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-bottom: 1px solid #222;
+  border-top: 0;
+  border-right: 0;
+  outline: none;
+  background: transparent;
+}
+.five {
+  top: 80%;
+  left: 40%;
+  position: absolute;
+}

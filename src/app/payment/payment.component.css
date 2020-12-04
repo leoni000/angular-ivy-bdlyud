@@ -1,0 +1,117 @@
+.group {
+  overflow: hidden;
+  background-color:rgb(250, 31, 31);
+  
+  border-radius: 10px;
+}
+
+.group p {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 16px;
+
+  font-family: Verdana;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+.pay1 {
+  top: 5%;
+  left: 47%;
+  position: absolute;
+  font-weight: bold;
+  font-size: 25px;
+}
+.bt {
+  top: 25%;
+  left: 30%;
+  position: absolute;
+  border: transparent;
+  font-size: 16px;
+   background-color:rgb(250, 31, 31);
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0.5em;
+}
+.bt1 {
+  top: 25%;
+  left: 65%;
+   background-color:rgb(250, 31, 31);
+  color: white;
+  position: absolute;
+  border: transparent;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0.5em;
+}
+
+.back {
+  top: 20%;
+  left: 25%;
+  height: 70%;
+  width: 70%;
+  position: absolute;
+   box-shadow: 5px 10px 8px #888888;
+}
+.log {
+  top: 15%;
+  left: 35%;
+  position: absolute;
+}
+.input-group {
+  position: absolute;
+  width: 280px;
+  transition: 0.5s;
+}
+.input-field {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-bottom: 1px solid #222;
+  border-top: 0;
+  border-right: 0;
+  outline: none;
+  background: transparent;
+}
+.btn {
+  top: 80%;
+  left: 40%;
+  position: absolute;
+  background-color:rgb(250, 31, 31);
+  color: white;
+  font-family: sans-serif;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+  width: 15%;
+  margin-top: 0em;
+  padding: 0.5em;
+  font-size: 15px;
+}
+
+.two {
+  position: absolute;
+  top: 15%;
+  width: 20%;
+  bottom: 0;
+  background-color: white;
+  box-shadow: 5px 10px 8px #888888;
+}
+.b1 {
+  width: 80%;
+  margin-left: 8%;
+  background-color: rgb(250, 31, 31);
+  font-family: sans-serif;
+  cursor: pointer;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 0em;
+  padding: 0.5em;
+  border: transparent;
+}

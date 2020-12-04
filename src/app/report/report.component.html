@@ -1,0 +1,44 @@
+<div class="full">
+	<div class="group">
+		<p> Parking Allocation </p>
+
+	</div>
+  <div class="two">
+	<br>
+	<br>
+	<button class="b1" routerLink="/booking">
+    	Dashboard
+    </button>
+	<br>
+
+	<button class="b1"routerLink="/mybooking" >
+    	My Booking
+    </button>
+	<br>
+
+
+	<button class="b1" (click)="popup()"  routerLink="/login" >
+    Logout
+    </button>
+
+
+</div>
+	<div style="background-size:cover" class="back">
+
+		<div class="log">
+			<form class="input-group">
+				<div class="in">
+					<label>Name:  {{customer_name}}</label>
+					<br><br>
+					<label>Vechicle no: {{customer_vechicle}}</label>
+					<br><br>
+					<label>Parking name: {{parking_name}} </label>
+					<br><br>
+					<label>Parking time: {{parkingtime}} </label><br><br>
+					<label>Parking slot: {{parkingslot}} </label><br><br>
+					<label>Amount: {{amount}} </label><br><br>
+        </div>
+			</form>
+		</div>
+		<button class="out" routerLink="/booking" (click)="modify()"> Return Home</button>
+	</div>

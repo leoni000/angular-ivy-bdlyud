@@ -1,0 +1,72 @@
+.full {
+  background-color: rgb(225, 230, 228);
+}
+.group {
+  overflow: hidden;
+  background-color:rgb(250, 31, 31);
+ 
+  border-radius: 10px;
+}
+
+.group p {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 16px;
+
+  font-family: Verdana;
+  text-decoration: none;
+  font-size: 20px;
+}
+.back {
+  height: 80%;
+  width: 100%;
+  position: absolute;
+}
+.log {
+  top: 35%;
+  left: 40%;
+  position: absolute;
+}
+.input-group {
+  position: absolute;
+  width: 280px;
+  transition: 0.5s;
+}
+.input-field {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-bottom: 1px solid #222;
+  border-top: 0;
+  border-right: 0;
+  outline: none;
+  background: transparent;
+}
+.sub-but {
+  width: 70;
+  padding: 5px 30px;
+  display: block;
+  margin: auto;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  
+}
+.new {
+  top: 70%;
+  left: 47.5%;
+  position: absolute;
+  color: rgb(10, 10, 10);
+  font-family: cursive;
+  cursor: pointer;
+}
+.new1 {
+  top: 78%;
+  left: 47%;
+  position: absolute;
+  color: rgb(0, 0, 5);
+  font-family: cursive;
+  cursor: pointer;
+}

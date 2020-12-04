@@ -1,0 +1,80 @@
+.group {
+  overflow: hidden;
+  background-color: rgb(250, 31, 31);
+
+  border-radius: 10px;
+}
+
+.group p {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 16px;
+
+  font-family: Verdana;
+  text-decoration: none;
+  font-size: 20px;
+}
+.input-group {
+  position: absolute;
+  width: 280px;
+  transition: 0.5s;
+}
+.back {
+  top: 20%;
+  left: 25%;
+  height: 70%;
+  width: 70%;
+  position: absolute;
+  box-shadow: 5px 10px 8px #888888;
+}
+.log {
+  top: 10%;
+  left: 40%;
+  position: absolute;
+}
+label {
+  display: inline-block;
+}
+.in {
+  display: inline-block;
+}
+.out {
+  top: 67%;
+  left: 40%;
+  background-color: rgb(250, 31, 31);
+  color: white;
+  position: absolute;
+  width: 70;
+  padding: 5px 30px;
+  display: block;
+  margin: auto;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.b1 {
+  width: 80%;
+  margin-left: 8%;
+  background-color: rgb(250, 31, 31);
+  font-family: sans-serif;
+  cursor: pointer;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 0em;
+  padding: 0.5em;
+  border: transparent;
+}
+.two {
+  position: absolute;
+  top: 15%;
+  width: 20%;
+  bottom: 0;
+  background-color: white;
+  box-shadow: 5px 10px 8px #888888;
+}
+button {
+  display: block;
+}

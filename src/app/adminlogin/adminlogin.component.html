@@ -1,0 +1,47 @@
+<div class="full">
+	<div class="group">
+		<p> Parking Allocation </p>
+
+	</div>
+
+
+	<div style="background-size:cover" class="back">
+
+		<div class="log">
+			<form class="input-group" [formGroup]="loginForm">
+				<input type="text" class="input-field" placeholder="Admin name-- admin"  formControlName="name" required/>
+				<div
+					*ngIf="loginForm.controls['name'].invalid && (loginForm.controls['name'].dirty || loginForm.controls['name'].touched)">
+					<div *ngIf="loginForm.controls['name'].errors.required">
+						*Name is required.
+					</div>
+				</div>
+				<br>
+				<input type="text" class="input-field" placeholder="Admin id-- 8080" formControlName="id" required/>
+				<div
+					*ngIf="loginForm.controls['id'].invalid && (loginForm.controls['id'].dirty || loginForm.controls['id'].touched)">
+					<div *ngIf="loginForm.controls['id'].errors.required">
+						*id is required.
+					</div>
+				</div>
+				<br>
+				<input type="password" class="input-field" placeholder="password-- 1234" formControlName="pass"  (focusout)="ckpass()" srequired/>
+				<div
+					*ngIf="loginForm.controls['pass'].invalid && (loginForm.controls['pass'].dirty || loginForm.controls['pass'].touched)">
+					<div *ngIf="loginForm.controls['pass'].errors.required">
+						*password is required.
+					</div>
+				</div>
+				<br>
+				<br>
+				<br>
+				<button routerLink="/home" [disabled]="loginForm.pristine || loginForm.invalid" class="sub-but">login</button>
+			</form>
+			<br>
+
+
+		</div>
+
+
+		</div>
+	</div>

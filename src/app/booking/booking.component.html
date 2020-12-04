@@ -1,0 +1,61 @@
+<div class="group">
+	<p> Parking Allocation </p>
+
+</div>
+<div class="two">
+	<br>
+	<br>
+	<button class="b1" routerLink="/booking">
+    	Dashboard
+    </button>
+	<br>
+	<button class="b1"  routerLink="/mybooking">
+    	My Booking
+    </button>
+	<br>
+
+	<button class="b1"(click)="popup()" routerLink="/login" >
+    Logout
+    </button>
+
+
+</div>
+<div class="three">
+	<div class="four">
+
+		<div class="one">
+			<p>Select Parking</p>
+			<select name="my-select"  [(ngModel)]="mySelect" >
+    <option [value]="item.parking_name" *ngFor="let item of com.data">
+        {{item.parking_name}}
+    </option>
+    </select>
+		</div>
+		<div class="center">
+			<div class="lt">
+				<p><b>Customer Details:</b> </p>
+				<input type="text" placeholder="Name" class="input-field"  [(ngModel)] = "customer_name"/>
+				<br>
+				<input type="number" placeholder="Mobile no" class="input-field" [(ngModel)] = "customer_mobile"/>
+				<br>
+				<input type="text" class="input-field" placeholder="Vehicle no" [(ngModel)] = "customer_vechicle"/>
+				<br>
+				<input type="email" class="input-field" placeholder="email" [(ngModel)] = "customer_email"/> <br><br>
+    </div>
+				<div class="rt">
+					<p><b>Parking Details:</b></p>
+					<label>  11am to 12pm </label> <input type="checkbox"  [(ngModel)] = "ck1" (focusout)="selectChange()"/>
+					<br><br>
+					<label>  12pm to 1am </label>
+					<input type="checkbox"  [(ngModel)] = "ck2" (focusout)="selectChange()"/><br><br>
+
+					<input type="text" placeholder="Parking location" value="{{mySelect}}" class="input-field" readonly>
+
+        </div>
+					<div class="five">
+						<button class="pay" routerLink="/payment" (click)="populate(ck1,ck2)">Proceed to payment</button>
+					</div>
+				</div>
+			</div>
+
+		</div>

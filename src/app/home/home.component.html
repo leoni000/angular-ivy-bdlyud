@@ -1,0 +1,90 @@
+<div class="group">
+	<p> Parking Allocation </p>
+
+</div>
+<div class="two">
+	<br>
+	<br>
+	<button class="b1"(click)="dashboard()">
+    	Dashboard
+    </button>
+	<br>
+	<button class="b1" (click)="add()">
+    	Add location
+    </button>
+	<br>
+	<button class="b1"(click)="addslots()">
+    	Add slots
+    </button>
+	<br>
+	<button class="b1" (click)="removes()">
+    	Remove Location
+    </button>
+	<br>
+	<button class="b1" (click)="booking()">
+    	View bookings
+    </button>
+	<br>
+	<button class="b1" (click)="popup()" routerLink="/login" >
+    logout
+    </button>
+
+
+</div>
+<div *ngIf="ck" class="three">
+	<div *ngFor="let item of parking_slots" class="four">
+		<table>
+			<tr>
+				<td> <label ><b>{{item.parking_name}}</b></label></td>
+				<td> <label  ><b>Total Slots:</b>{{item.total_spots}}</label> </td><br><br>
+
+      </tr>
+				<br>
+			<tr>
+				<td><b>Location:</b><br><br>{{item.address}}</td>
+			</tr>
+			<br>
+			<br>
+   </table>
+	</div>
+
+</div>
+<div *ngIf="addf" class="lt">
+	<p>Enter parking details</p>
+	<input type="text"  class="input-field" placeholder="Parking name"     [(ngModel)] = "name"/>
+	<br>
+	<input type="text"  class="input-field" placeholder="Address" [(ngModel)]  = "address"/>
+	<input type="number"  class="input-field" placeholder="Total slots" [(ngModel)]  = "spots"/>
+	<br><br>
+	<button class="add1" (click)="check()" >  Add Parking           </button>
+</div>
+<div *ngIf="adds" class="lt">
+	<p>Enter parking details</p>
+	<form class="input-group">
+		<input type="text" class="input-field" [(ngModel)]="mname" placeholder="enter parking name" name="name">
+		<br>
+		<input type="number" class="input-field" [(ngModel)]="mspots" placeholder="enter no of spots" name="sp">
+		<br>
+
+		<br>
+		<br>
+		<button class="add1"  (click)="modify()">Modify spot?</button>
+
+	</form>
+</div>
+<div *ngIf="removef" class="lt">
+	<p>Enter parking details</p>
+	<form class="input-group">
+		<input type="text" class="input-field" [(ngModel)]="rname" placeholder="enter parking name" name="name">
+		<br>
+
+		<br>
+		<br>
+		<button class="add1"  (click)="removeslots()">Remove spot?</button>
+	</form>
+</div>
+<div *ngIf="bookingf">
+	<br><br>
+	<p style="text-align:center"><b>Booking details</b></p>
+
+</div>

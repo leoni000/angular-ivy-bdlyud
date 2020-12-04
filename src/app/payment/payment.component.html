@@ -1,0 +1,54 @@
+<div class="group">
+	<p> Parking Allocation </p>
+
+</div>
+<div class="two">
+	<br>
+	<br>
+	<button class="b1" routerLink="/booking">
+    	Dashboard
+    </button>
+	<br>
+	<br>
+	<button class="b1"  routerLink="/mybooking">
+    	My Booking
+    </button>
+	<br>
+	<br>
+
+	<button class="b1" (click)="popup()" routerLink="/login" >
+    Logout
+    </button>
+
+
+</div>
+<div style="background-size:cover" class="back">
+
+	<div *ngIf="btn">
+		<p class="pay1">
+			Mode of Pay:
+
+		</p>
+		<button class="bt" (click)="setflag()">Pay on Card</button>
+		<button class="bt1" routerLink="/report">Cash On Arrival</button>
+	</div>
+	<div *ngIf="flag" class="log">
+		<p><b>Enter card details:</b></p>
+		<form class="input-group">
+			<input type="text" class="input-field" name="cardname" placeholder="name on the card">
+			<br>
+			<input type="text" class="input-field" name="cardno" placeholder="cardno">
+			<br>
+			<input type="text" class="input-field" name="date" placeholder="expiration date">
+			<br>
+			<input type="text" class="input-field" name="cvv" placeholder="cvv">
+    	</form>
+	</div>
+
+
+
+
+	<div *ngIf="pay">
+		<p class="btn" routerLink="/report"> Pay</p>
+	</div>
+</div>

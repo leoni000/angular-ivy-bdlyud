@@ -1,0 +1,28 @@
+<div class="full">
+	<div class="group">
+		<p> Parking Allocation </p>
+
+	</div>
+
+
+	<div style="background-size:cover" class="back">
+
+		<div class="log">
+			<form class="input-group" [formGroup]="registration">
+				<input type="text" class="input-field" placeholder="User name"
+        formControlName="name" required/>
+				<input type="number" class="input-field" placeholder="Mobile no" formControlName="mobile" required/>
+				<input type="email" class="input-field" placeholder="E-mail"
+        formControlName="email"required/>
+				<br>
+				<input type="password" class="input-field" placeholder="password" formControlName="pass" required/>
+				<br><br>
+				<button routerLink="/booking" [disabled]="registration.pristine || registration.invalid" class="sub-but">register</button>
+			</form>
+			<br>
+
+
+		</div>
+
+		</div>
+	</div>
